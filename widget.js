@@ -56,7 +56,7 @@ cprequire_test(["inline:com-chilipeppr-widget-yg"], function(myWidget) {
 
     chilipeppr.load(
         "#testDivForFlashMessageWidget",
-        "https://yuskegoto.github.io/widget-yg/auto-generated-widget.html",
+        "http://raw.githubusercontent.com/chilipeppr/element-flash/master/auto-generated-widget.html",
         function() {
             console.log("mycallback got called after loading flash msg module");
             cprequire(["inline:com-chilipeppr-elem-flashmsg"], function(fm) {
@@ -339,7 +339,7 @@ cpdefine("inline:com-chilipeppr-widget-yg", ["chilipeppr_ready", /* other depend
             });
 
             var that = this;
-            chilipeppr.load("https://yuskegoto.github.io/widget-yg/auto-generated-widget.html", function() {
+            chilipeppr.load("http://raw.githubusercontent.com/chilipeppr/widget-pubsubviewer/master/auto-generated-widget.html", function() {
                 require(['inline:com-chilipeppr-elem-pubsubviewer'], function(pubsubviewer) {
                     pubsubviewer.attachTo($(topCssSelector + ' .panel-heading .dropdown-menu'), that);
                 });
