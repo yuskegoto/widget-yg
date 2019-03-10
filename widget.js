@@ -199,11 +199,11 @@ cpdefine("inline:com-chilipeppr-widget-yg", ["chilipeppr_ready", /* other depend
          * onHelloBtnClick is an example of a button click event callback
          */
         onHelloBtnClick: function(evt) {
-            console.log("saying hello 2 from btn in tab 1");
+            console.log("saying whatever from btn in tab 1");
             chilipeppr.publish(
                 '/com-chilipeppr-elem-flashmsg/flashmsg',
-                "Hello 2 Title",
-                "Hello World 2 from Tab 1 from widget " + this.id,
+                "Test msg title Title",
+                "test message ... " + this.id,
                 2000 /* show for 2 second */
             );
         },
@@ -339,7 +339,7 @@ cpdefine("inline:com-chilipeppr-widget-yg", ["chilipeppr_ready", /* other depend
             });
 
             var that = this;
-            chilipeppr.load("http://raw.githubusercontent.com/chilipeppr/widget-pubsubviewer/master/auto-generated-widget.html", function() {
+            chilipeppr.load("https://yuskegoto.github.io/widget-yg/auto-generated-widget.html", function() {
                 require(['inline:com-chilipeppr-elem-pubsubviewer'], function(pubsubviewer) {
                     pubsubviewer.attachTo($(topCssSelector + ' .panel-heading .dropdown-menu'), that);
                 });
